@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.enzo.fxapp.Controllers.LoginController"
             prefHeight="400.0" prefWidth="600.0">
-
+    <children>
+        <TextField fx:id="usernameField" layoutX="200.0" layoutY="100.0" promptText="Username"/>
+        <PasswordField fx:id="passwordField" layoutX="200.0" layoutY="150.0" promptText="Password"/>
+        <Button text="Login" layoutX="250.0" layoutY="200.0" onAction="#handleLoginButtonAction"/>
+    </children>
 </AnchorPane>
