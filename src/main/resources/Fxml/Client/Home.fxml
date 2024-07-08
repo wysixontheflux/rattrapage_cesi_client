@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enzo.fxapp.Controllers.Client.HomeController" stylesheets="@styles.css">
+    <VBox alignment="CENTER" spacing="20" styleClass="background" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20">
+        <Text text="Enzo aggro-alimentaire corporation CESI" styleClass="title"/>
+        <HBox spacing="30" alignment="CENTER">
+            <VBox styleClass="custom-box" spacing="10">
+                <Text text="Lieux de travail" styleClass="heading"/>
+                <ListView fx:id="listSites" prefHeight="200" prefWidth="300">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+
+                        </FXCollections>
+                    </items>
+                </ListView>
+            </VBox>
+            <VBox styleClass="custom-box" spacing="10">
+                <Text text="Types de métier" styleClass="heading"/>
+                <ListView fx:id="listJobs" prefHeight="200" prefWidth="300">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+
+                        </FXCollections>
+                    </items>
+                </ListView>
+            </VBox>
+        </HBox>
+        <Button text="Plus d'infos" onAction="#handleMoreInfo" styleClass="info-button"/>
+    </VBox>
+</AnchorPane>

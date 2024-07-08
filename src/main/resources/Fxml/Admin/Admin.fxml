@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.enzo.fxapp.Controllers.Admin.AdminController" spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    <HBox spacing="10">
+        <Button text="Ajouter Collaborateur" onAction="#handleAddCollaborateur"/>
+        <Button text="Modifier Collaborateur" onAction="#handleEditCollaborateur"/>
+        <Button text="Supprimer Collaborateur" onAction="#handleDeleteCollaborateur"/>
+    </HBox>
+    <TableView fx:id="adminTableView" prefHeight="400" prefWidth="800">
+        <columns>
+            <TableColumn fx:id="adminNameColumn" text="Nom" prefWidth="100"/>
+            <TableColumn fx:id="adminFirstNameColumn" text="Prénom" prefWidth="100"/>
+            <TableColumn fx:id="adminPhoneColumn" text="Téléphone Fixe" prefWidth="150"/>
+            <TableColumn fx:id="adminMobileColumn" text="Téléphone Portable" prefWidth="150"/>
+            <TableColumn fx:id="adminEmailColumn" text="Email" prefWidth="200"/>
+            <TableColumn fx:id="adminServiceColumn" text="Service" prefWidth="100"/>
+            <TableColumn fx:id="adminSiteColumn" text="Site" prefWidth="100"/>
+        </columns>
+    </TableView>
+</VBox>

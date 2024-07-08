@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.enzo.fxapp.Controllers.Client.MainLayoutController" fx:id="mainPane">
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #2c3e50; -fx-padding: 10;">
+            <HBox alignment="CENTER" style="-fx-padding: 20 0 20 0;">
+                <Button text="EnzoApp" style="-fx-font-size: 20; -fx-background-color: transparent; -fx-text-fill: white;"/>
+            </HBox>
+            <Button text="Home" fx:id="btnHome" onAction="#handleHome" style="-fx-background-color: #34495e; -fx-text-fill: white;"/>
+            <Button text="Collaborateur" fx:id="btnCollaborateur" onAction="#handleCollaborateur" style="-fx-background-color: #34495e; -fx-text-fill: white;"/>
+            <Button text="Parametre" fx:id="btnParametre" onAction="#handleParametre" style="-fx-background-color: #34495e; -fx-text-fill: white;"/>
+            <Button text="Se deconnecter" fx:id="btnSeDeconnecter" onAction="#handleSeDeconnecter" style="-fx-background-color: #34495e; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+    <center>
+        <fx:include source="Client/Home.fxml"/>
+    </center>
+</BorderPane>

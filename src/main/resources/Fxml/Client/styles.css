@@ -1,0 +1,90 @@
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.filter-box {
+    -fx-padding: 10;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.search-field, .filter-combobox {
+    -fx-pref-width: 200px;
+    -fx-padding: 5 10;
+}
+
+.table-view {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.details-box {
+    -fx-padding: 20;
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.details-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.details-grid {
+    -fx-padding: 10;
+}
+
+.details-value {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666666;
+}
+
+.root {
+    -fx-font-family: 'Segoe UI', 'Arial';
+}
+
+.background {
+    -fx-background-color: #34495e;
+    -fx-padding: 20;
+}
+
+.custom-box {
+    -fx-padding: 15;
+    -fx-background-color: #2c3e50;
+    -fx-border-color: #1abc9c;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 10);
+}
+
+.title {
+    -fx-font-size: 24pt;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-weight: bold;
+}
+
+.heading {
+    -fx-font-size: 14pt;
+    -fx-text-fill: #bdc3c7;
+    -fx-font-weight: bold;
+    -fx-underline: true;
+}
+
+.info-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-color: #2980b9;
+    -fx-border-width: 2;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
